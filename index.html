@@ -12,12 +12,45 @@ p {text-align: center;}
 </head>
 
 <body bgcolor="#91BEF3">
+
 <h1> Dezzy CSGO Accounts </h1>
 
+<p id="demo"></p> 
 
 <p> #1 - DezzyV1 <a href="https://steamcommunity.com/profiles/76561199023193736/" target="_blank">(steam:ID)</a> | </p> <p class="p1">STATUS </p> : <p> <a href="https://i.imgur.com/5BuuakJ.png" target="_blank">[SCREENSHOT]</a> </p>
 <p> #2 - DezzyV2 (steam:ID) | </p> <p class="p2"> STATUS </p> : <p> [SCREENSHOT] </p>
 <p> #3 - DezzyV3 (steam:ID) | </p> <p class="p2"> STATUS </p> : <p> [SCREENSHOT] </p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
 
 
 </body>
