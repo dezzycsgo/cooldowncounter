@@ -49,8 +49,11 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   display: inline-block;
-  center;
 }
 
 .btn:hover {background: #eee;}
 .default {color: white;}
+
+.text-center {
+  text-align: center;
+}
